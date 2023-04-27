@@ -1,0 +1,19 @@
+.container {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 90px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 25px;
+}
+p {
+    color: rgb(0, 0, 0);
+}
+span {
+    color: red;
+}
+
+#background{
+    background-image: linear-gradient(to right, turquoise, purple, turquoise);
+}
+
