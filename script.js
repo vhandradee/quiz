@@ -14,32 +14,67 @@ if(prompt(" O vinho do porto é um vinho português fortificado de qual região:
 if(prompt(" Qual das alternativas abaixo traduz uma expressão usada por degustadores:\n 1-Magro = Sem corpo\n 2-Longo = De grande persistência\n 3-Oxidado = Vinho ao estilo de vinagre")  == "2") {
     pontos = pontos+ 1;
 }
+if(prompt(" Guardar as garrafas na horizontal ou vertical?:\n 1-Vertical \n 2- = horizontal \n 3-Ambas ")  == "2") {
+    pontos = pontos+ 1;
+}
+if(prompt(" A origem do Champagne é de qual país: \n 1-Itália \n 2-Espanha \n 3-França ")  == "3") {
+    pontos = pontos+ 1;
+}
+if(prompt(" Todas são uvas de origem francesa, exceto: \n 1-Riesling \n 2-Malbec \n 3-Cabernet Franc ")  == "1") {
+    pontos = pontos+ 1;
+}
+if(prompt(" Termo blanc de blancs é utilizado frequentemente para referenciar um: \n 1-Vinho branco \n 2-Espumante \n 3-Vinho branco fortificado ")  == "2") {
+    pontos = pontos+ 1;
+}
+if(prompt(" NÃO é considerado um crítico, especialista ou um avaliador do mundo dos vinhos: \n 1-Roberto Park \n 2-Wine Spectator \n 3-Jancis Robinson ")  == "2") {
+    pontos = pontos+ 1;
+}
 
 document.getElementById('resultado').innerHTML="Calculando...";
 function mostrarResultado() {
     console.log('entrei na função')
+    if(pontos == 10) {
+        alert("Você acertou 10/10");
+        document.getElementById('resultado'). innerHTML = pontos;
+    }
+    if(pontos == 9) {
+        alert("Você acertou 09/10");
+        document.getElementById('resultado'). innerHTML = pontos;
+    }
+    if(pontos == 8) {
+        alert("Você acertou 08/10");
+        document.getElementById('resultado'). innerHTML = pontos;
+    }
+    if(pontos == 7) {
+        alert("Você acertou 07/10");
+        document.getElementById('resultado'). innerHTML = pontos;
+    }
+    if(pontos == 6) {
+        alert("Você acertou 06/10");
+        document.getElementById('resultado'). innerHTML = pontos;
+    }
     if(pontos == 5) {
-        alert("Você acertou 5/5");
+        alert("Você acertou 05/10");
         document.getElementById('resultado'). innerHTML = pontos;
     }
     if(pontos == 4) {
-        alert("Você acertou 4/5");
+        alert("Você acertou 04/10");
         document.getElementById('resultado'). innerHTML = pontos;
     }
     if(pontos == 3) {
-        alert("Você acertou 3/5");
+        alert("Você acertou 03/10");
         document.getElementById('resultado'). innerHTML = pontos;
     }
     if(pontos == 2) {
-        alert("Você acertou 2/5");
+        alert("Você acertou 02/10");
         document.getElementById('resultado'). innerHTML = pontos;
     }
     if(pontos == 1) {
-        alert("Você acertou 1/5");
+        alert("Você acertou 01/10");
         document.getElementById('resultado'). innerHTML = pontos;
     }
     if(pontos == 0) {
-        alert("Você acertou 0/5");
+        alert("Você acertou 0/10");
         document.getElementById('resultado'). innerHTML = pontos;
     }
 }
